@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <!-- <script src="p5.scaler.js"></script> -->
+    <script src="p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+
+  </head>
+
+  <style>
+    .no-border {
+      border: none;
+      position: absolute;
+      top:10px;
+      left:calc(50% - 40px);
+      display: none;
+      transform: scale(0.8);
+
+    }
+    .no-border1 {
+      border: none;
+
+      position: absolute;
+      top:10px;
+      left:calc(50% - 40px);
+      display: none;
+      transform: scale(0.8);
+
+    }
+    .no-border2 {
+      border: none;
+
+      position: absolute;
+      top:10px;
+      left:calc(50% - 40px);
+      display: none;
+      transform: scale(0.8);
+
+    }
+
+
+    html, body {
+        /* height: 100%; */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* 禁止滚动 */
+    }
+  </style>
+  <body>
+    <script src="sketch.js"></script>
+
+
+
+    <iframe src="../model028A-code/index.html" class="no-border" id="28A" width="800" height="900"></iframe>
+    <iframe src="../model028B-code/index.html" class="no-border1" id="28B" width="800" height="900"></iframe>
+    <iframe src="../model028C-code/index.html" class="no-border2" id="28C" width="800" height="900"></iframe>
+
+</body>
+<script>
+
+
+// 获取三个iframe元素
+const iframe1 = document.getElementById('28A');
+const iframe2 = document.getElementById('28B');
+const iframe3 = document.getElementById('28C');
+
+// 监听iframe的加载事件
+iframe1.addEventListener('load', function() {
+    iframe2.style.display = 'none';
+    iframe3.style.display = 'none';
+});
+
+iframe2.addEventListener('load', function() {
+    iframe1.style.display = 'none';
+    iframe3.style.display = 'none';
+});
+
+iframe3.addEventListener('load', function() {
+    iframe1.style.display = 'none';
+    iframe2.style.display = 'none';
+});
+
+
+</script>
+</html>
