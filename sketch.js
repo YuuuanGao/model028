@@ -7,8 +7,8 @@ let Aclicked = -1;
 let letterBoxes = [];
 
 let    ad1=[[],[],[]]
-let klm=["../model028A-code/index.html?index=", "../model028B-code/index.html?index=", "../model028C-code/index.html?index="]
-let klm2=["../model028A-code/index.html?", "../model028B-code/index.html?", "../model028C-code/index.html?"]
+let klm=["./model028A-code/index.html?index=", "./model028B-code/index.html?index=", "./model028C-code/index.html?index="]
+let klm2=["./model028A-code/index.html?", "./model028B-code/index.html?", "./model028C-code/index.html?"]
 let   showall=false
 
 let circles = [];
